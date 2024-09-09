@@ -152,53 +152,25 @@ footer {
              margin-top: 0;
              margin-right: 15px;
              cursor: pointer;
+        }
+        .streaming-platform-grid {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            column-gap: 0;
+            row-gap: 0;
+            margin-bottom: 40px;
         } 
-        .youtube-channel-subscribe {
-            margin-left: 50px;
-            margin-right: 50px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            text-align: center;
-            padding-top: 8px;
-            padding-bottom: 15px;
-            font-size: 10px;
-            color: #ff6a00;
-            border-radius: 10px;
+        .platforms-grid {
+            background-color: white;
+            height: 45px;
+            width: auto;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
-        .youtube-subscribe h2 {
-            font-size: 15px;
-            margin-bottom: 20px;
-        } 
-        .subscribe-button {
-            border-radius: 50px;
-        }
-        .grid-links-to-download {
-            margin-top: 40px;
-            display: grid;
-            grid-template-columns: 1fr;
-            column-gap: 5px;
-            row-gap: 5px;
-        }
-        .grid-song-download {
-            height: 40px;
-            background-color: rgb(253, 106, 52);
-            align-items: center;
-            padding-top: 5px;
-            padding-bottom: 5px;   
-            color: white;
-            border-radius: 4px;
-        }
-        .grid-songs {
-            font-weight: 700px;
-            font-size: 16px;
-        }
-        .download-icons {
+        .platform-images {
             width: 35px;
-            align-items: center;
-            padding-left: 150px;
-            padding-top: 7px;
-            
+            height: auto;
+            padding: 5px 5px 5px 5px;
         }
         .contact-me { 
         color: #ff6a00;
@@ -213,40 +185,6 @@ footer {
         .contact-me:active {
         opacity: 0.7;
         }  
-        .links-to-downloads {
-/*          background: linear-gradient(to right, #80e1ff, #00c3ff);*/
- /*          border: 2px solid #80e1ff; */
-            border-radius: 10px;
-            
-            margin-left: 20px;
-            margin-right: 20px;
-        }
-        .link-to-download-songs {
-            color: #ff6a00;
-            font-size: 17px;
-            font-weight: 500;
-            font-style: italic;
-            padding-top: 20px;
-        }
-        .downloads {
-            display: flex;
-            flex-direction: row;
-            gap: 15px;
-            justify-content: center;
-            align-items: center;
-            padding-bottom: 10px;
-        }
-        .songs {
-            color: rgb(0, 0, 0);
-            font-size: 15px;
-            font-weight: 500;
-            transition: opacity 0.20s;
-        }
-        .songs:hover {
-            color: white;
-            opacity: 0.7;
-        } 
-
 
 /*This where audiomack slider css begins*/ 
 
