@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<style>
+.thumbnail {
+  width: 100%;
+}
+
+.video-title {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.thumbnail-row {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 0;
+  text-decoration: none;
+}
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 751px) and (max-width: 999px ) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+</style>
+  </head>
+  <body>
+    
+    <section class="video-grid">
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="nellyd-artist-image-galleries/nellyd111.jpg">
+        </div>
+        <div class="video-info-grid">
+            <p class="video-title">
+              Nigerian fast rising songstress, prolific songwriter, dynamic 
+              recording and artiste with a unique golden voice, Nellyd returns 
+              with yet another soul-lifting singles.
+            </p>
+        </div>
+      </div>
+    
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="nellyd-artist-image-galleries/nellyd113.jpg">
+        </div>
+        <div class="video-info-grid">
+            <p class="video-title">
+              I am testifying of your victory in Christ in a 
+              world full of challenges. He will never leave you alone. 
+              That will surely be your real-time life experience.
+            </p>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>
+
+
