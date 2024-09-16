@@ -1,0 +1,28 @@
+      /* Styling for the container */
+      .audio-container {
+          text-align: center;
+          margin-top: 50px;
+          background-color: aliceblue;
+      }
+      .audio-image {
+        width: 200px;
+        padding-top: 20px;
+      }
+      .audio-text {
+        padding-top: 10px;
+      }
+
+      /* Styling for the download link */
+      .download-link {
+          display: block;
+          margin-top: 10px;
+          padding-bottom: 10px;
+          color: #ff6a00;
+          text-decoration: none;
+          font-size: 1.2em;
+          transition: color 0.3s;
+      }
+
+      .download-link:hover {
+          color: rgb(127, 127, 127);;
+      }

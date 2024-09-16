@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Play and Download Example</title>
+    <style>
+        /* Styling for the container */
+        .audio-container {
+            text-align: center;
+            margin-top: 50px;
+            background-color: aliceblue;
+        }
+        .audio-text {
+          padding-top: 10px;
+        }
+
+        /* Styling for the download link */
+        .download-link {
+            display: block;
+            margin-top: 10px;
+            padding-bottom: 10px;
+            color: #007bff;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        .download-link:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+  <section>
+    <div class="audio-container">
+      <h2 class="audio-text">Nellid-Wete_Ego</h2>
+      <!-- Audio Player -->
+      <audio controls>
+          <source src="audios/Nellid-Wete_Ego.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+      </audio>
+      <!-- Download Link -->
+      <a class="download-link" href="audios/Nellid-Wete_Ego.mp3" download>Download Audio</a>
+  </div>
+  </section>
+
+
+
+</body>
+</html>

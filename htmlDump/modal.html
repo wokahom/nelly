@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal on Page Load</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        /* Modal container styling */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+        }
+
+        /* Modal content box */
+        .modal-content {
+            background-color: #fff;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 0;
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Close button (X) */
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 48px;
+            font-weight: bold;
+            color: #6e6e6e;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            color: #000;
+        }
+
+        /* Image inside the modal */
+        .modal-image {
+            width: 400px;
+            height: auto;
+            border-radius: 0;
+        }
+
+        /* Modal text */
+        .modal-text2 {
+            color: rgba(0, 0, 0, 1);;
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: 700;
+            font-family: 'Montserrat';
+        }
+        .modal-text1 {
+            color: rgba(0, 0, 0, 1);;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+            margin-top: 0;
+            animation: pulse 2s infinite;
+            font-family: 'Montserrat';
+            }
+
+            @keyframes pulse {
+            60% {
+                color: black;
+            }
+            80% {
+                color: rgb(230, 126, 228);
+            }
+            100% {
+                color: orange;
+            }
+            }
+
+        /* Button inside the modal */
+        .modal-button {
+            margin-top: 5px;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 1);;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .modal-button:hover {
+            background-color: rgb(110, 110, 110);;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Modal Structure -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <p class="modal-text1">New Single "Wete Ego"</p>
+            <img src="streaming-platforms/nellyd666.png" alt="Placeholder Image" class="modal-image">
+            <p class="modal-text2">Available on all Streaming Platforms</p>
+            <div>
+                <a href="index.html">
+                    <button class="modal-button">Download</button>
+                </a>
+                <a href="https://open.spotify.com/album/420kATeF2OtG7e5Cyw9HDD?si=zNf8VX8fT56tgu5fGn3t5g" target="_blank">
+                    <button class="modal-button">Streaming</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Get modal element
+        var modal = document.getElementById("myModal");
+
+        // Get close button
+        var closeModal = document.getElementById("closeModal");
+
+        // Display the modal when the page is loaded
+        window.onload = function() {
+            modal.style.display = "block";
+        }
+
+        // Close the modal when the close button is clicked
+        closeModal.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // Close the modal when the user clicks outside the modal content
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

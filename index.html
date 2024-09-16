@@ -3,12 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nellyd Songs</title>
+    <title>Nellid Songs</title> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/nellyd.css"> 
+    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="styles/audio.css">
     <style>
     </style>
 </head>
 <body>
+    <!-- Modal Structure -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeModal">&times;</span>
+                <p class="modal-text1">New Single "Wete Ego"</p>
+                <img src="streaming-platforms/nellyd666.png" alt="Placeholder Image" class="modal-image">
+                <p class="modal-text2">Available on all Streaming Platforms</p>
+                <div>
+                    <a href="index.html">
+                        <button class="modal-button">Download</button>
+                    </a>
+                    <a href="https://open.spotify.com/album/420kATeF2OtG7e5Cyw9HDD?si=zNf8VX8fT56tgu5fGn3t5g" target="_blank">
+                        <button class="modal-button">Streaming</button>
+                    </a>
+                </div>
+            </div>
+        </div>
 
     <div class="container">
 
@@ -48,7 +76,7 @@
             <div>
                 <div><img src="nellyd-artist-image-galleries/nellyd0.jpg" alt="Profile Image" class="profile-img"></div>
                 <div>
-                    <h1>Nellyd</h1>
+                    <h1>Nellid</h1>
                     <p>
                         <a class="contact-me" href="mailto:nellidsongs@gmail.com" target="_blank">
                         <span>For Booking Click Here &#8594;</span></a>
@@ -186,6 +214,22 @@
             </div>
           </section>
 
+          <section>
+            <div class="audio-container">
+                <div>
+                    <img class="audio-image" src="nellyd-artist-image-galleries/nellyd66.jpg" alt="">
+                </div>
+              <h2 class="audio-text">Nellid-Wete_Ego</h2>
+              <!-- Audio Player -->
+              <audio controls>
+                  <source src="audios/Nellid-Wete_Ego.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio>
+              <!-- Download Link -->
+              <a class="download-link" href="audios/Nellid-Wete_Ego.mp3" download>Download Audio</a>
+          </div>
+          </section>
+
         <section>
             <div 
                 class="follow-me-background">
@@ -220,6 +264,31 @@
     </div>
 
     <script>
+// MODAL JAVASCRIPT STARTS HERE //
+        // Get modal element
+        var modal = document.getElementById("myModal");
+
+        // Get close button
+        var closeModal = document.getElementById("closeModal");
+
+        // Display the modal when the page is loaded
+        window.onload = function() {
+            modal.style.display = "block";
+        }
+
+        // Close the modal when the close button is clicked
+        closeModal.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // Close the modal when the user clicks outside the modal content
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+// SLIDER JAVASCRIPT ENDS HERE //
+// SLIDER JAVASCRIPT STARTS HERE //
         let slideIndex = 0;
 
         function moveSlide(n) {
@@ -238,6 +307,7 @@
 
         // Auto-play slider every 10 seconds
         setInterval(() => moveSlide(1), 3000);
+// SLIDER JAVASCRIPT ENDS HERE //
     </script>
 </body>
 </html>
