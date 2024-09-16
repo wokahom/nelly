@@ -16,7 +16,7 @@
           margin: 50px auto;
           padding: 20px;
           border-radius: 0;
-          width: 80%;
+          width: 60%;
           max-width: 600px;
           text-align: center;
           position: relative;
@@ -39,7 +39,7 @@
 
       /* Image inside the modal */
       .modal-image {
-          width: 400px;
+          width: 300px;
           height: auto;
           border-radius: 0;
       }
