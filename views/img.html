@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Logo Grid</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Responsive Grid Container */
+        .logo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust columns based on screen size */
+            gap: 20px; /* Default gap between rows and columns */
+            justify-items: center; /* Center logos horizontally */
+            align-items: center; /* Center logos vertically */
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Logo Item Styling */
+        .logo-grid img {
+            max-width: 50px;
+            height: auto;
+            object-fit: contain;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        /* Hover Effect on Logos */
+        .logo-grid img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Media Query for Customizing Gaps on Smaller Screens */
+        @media (max-width: 768px) {
+            .logo-grid {
+                gap: 15px; /* Reduced gap for smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo-grid {
+                gap: 10px; /* Further reduced gap for mobile devices */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Available on all Streaming Platforms</h1>
+    <div class="logo-grid">
+        <img src="streaming-platforms/spotify1.png" alt="Spotify Logo">
+        <img src="streaming-platforms/apple-music11.jpg" alt="Apple Music Logo">
+        <img src="streaming-platforms/youtube1.webp" alt="YouTube Logo">
+        <img src="streaming-platforms/tidal1.png" alt="Tidal Logo">
+        <img src="streaming-platforms/deezer1.png" alt="Deezer Logo">
+        <img src="streaming-platforms/amazon1.webp" alt="Amazon Music Logo">
+        <img src="streaming-platforms/soundcloud1.webp" alt="SoundCloud Logo">
+        <img src="streaming-platforms/pandora1.jpg" alt="Pandora Logo">
+        <img src="streaming-platforms/youtube2.webp" alt="SoundCloud Logo">
+        <img src="streaming-platforms/boomplay1.webp" alt="Pandora Logo">
+        <img src="streaming-platforms/soundcloud1.webp" alt="SoundCloud Logo">
+        <img src="streaming-platforms/audiomack1.png" alt="Pandora Logo">
+        <img src="streaming-platforms/soundcloud1.webp" alt="SoundCloud Logo">
+        <img src="streaming-platforms/shazam11.png" alt="Pandora Logo">
+        <img src="streaming-platforms/itune11.svg" alt="SoundCloud Logo">
+        <img src="streaming-platforms/napstar11.png" alt="Pandora Logo">
+    </div>
+
+</body>
+</html>

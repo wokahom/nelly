@@ -1,0 +1,48 @@
+
+      .streaming-platforms {
+          background-color: rgb(224, 224, 224);
+          text-align: center;
+          padding: 15px;
+
+      }
+
+      /* Responsive Grid Container */
+      .logo-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust columns based on screen size */
+          gap: 20px; /* Default gap between rows and columns */
+          justify-items: center; /* Center logos horizontally */
+          align-items: center; /* Center logos vertically */
+          padding: 20px;
+          background-color: rgb(239, 239, 239);
+          border-radius: 0;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Logo Item Styling */
+      .logo-grid img {
+          max-width: 50px;
+          height: auto;
+          object-fit: contain;
+          border-radius: 8px;
+          cursor: pointer;
+          transition: transform 0.3s ease;
+      }
+
+      /* Hover Effect on Logos */
+      .logo-grid img:hover {
+          transform: scale(1.5);
+      }
+
+      /* Media Query for Customizing Gaps on Smaller Screens */
+      @media (max-width: 768px) {
+          .logo-grid {
+              gap: 15px; /* Reduced gap for smaller screens */
+          }
+      }
+
+      @media (max-width: 480px) {
+          .logo-grid {
+              gap: 10px; /* Further reduced gap for mobile devices */
+          }
+      }
